@@ -1,6 +1,6 @@
 # hugo server --minify --themesDir ... --baseURL=http://0.0.0.0:1313/theme/hugo-book/
 
-baseURL = 'https://example.com/'
+baseURL = 'https://yeyuehuke.github.io/Moon.github.io/'
 title = '新年快乐！'
 DefaultContentLanguage = "cn"
 theme = 'book'

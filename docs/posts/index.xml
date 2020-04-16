@@ -2,20 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>日志 on 新年快乐！</title>
-    <link>https://example.com/posts/</link>
+    <link>https://yeyuehuke.github.io/Moon.github.io/posts/</link>
     <description>Recent content in 日志 on 新年快乐！</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 16 Apr 2020 17:17:32 +0800</lastBuildDate>
     
-	<atom:link href="https://example.com/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yeyuehuke.github.io/Moon.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>PageCreated</title>
-      <link>https://example.com/posts/PageCreated/</link>
+      <link>https://yeyuehuke.github.io/Moon.github.io/posts/PageCreated/</link>
       <pubDate>Thu, 16 Apr 2020 17:17:32 +0800</pubDate>
       
-      <guid>https://example.com/posts/PageCreated/</guid>
+      <guid>https://yeyuehuke.github.io/Moon.github.io/posts/PageCreated/</guid>
       <description>这个博客在今天上线了。</description>
     </item>
     

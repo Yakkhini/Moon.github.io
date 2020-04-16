@@ -3,59 +3,60 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://example.com/ru/categories/</loc>
+    <loc>https://yeyuehuke.github.io/Moon.github.io/ru/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="https://example.com/categories/"
+                href="https://yeyuehuke.github.io/Moon.github.io/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/en/categories/"
+                href="https://yeyuehuke.github.io/Moon.github.io/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://example.com/ru/categories/"
+                href="https://yeyuehuke.github.io/Moon.github.io/ru/categories/"
                 />
   </url>
   
   <url>
-    <loc>https://example.com/ru/tags/</loc>
+    <loc>https://yeyuehuke.github.io/Moon.github.io/ru/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="https://example.com/tags/"
+                href="https://yeyuehuke.github.io/Moon.github.io/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/en/tags/"
+                href="https://yeyuehuke.github.io/Moon.github.io/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://example.com/ru/tags/"
+                href="https://yeyuehuke.github.io/Moon.github.io/ru/tags/"
                 />
   </url>
   
   <url>
-    <loc>https://example.com/ru/</loc>
+    <loc>https://yeyuehuke.github.io/Moon.github.io/ru/</loc>
+    <lastmod>2020-04-16T17:23:21+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="https://example.com/"
+                href="https://yeyuehuke.github.io/Moon.github.io/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/en/"
+                href="https://yeyuehuke.github.io/Moon.github.io/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://example.com/ru/"
+                href="https://yeyuehuke.github.io/Moon.github.io/ru/"
                 />
   </url>
   

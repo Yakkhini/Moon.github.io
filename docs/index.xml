@@ -2,47 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>你好！ on 新年快乐！</title>
-    <link>https://example.com/</link>
+    <link>https://yeyuehuke.github.io/Moon.github.io/</link>
     <description>Recent content in 你好！ on 新年快乐！</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 16 Apr 2020 17:17:32 +0800</lastBuildDate>
     
-	<atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yeyuehuke.github.io/Moon.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>PageCreated</title>
-      <link>https://example.com/posts/PageCreated/</link>
+      <link>https://yeyuehuke.github.io/Moon.github.io/posts/PageCreated/</link>
       <pubDate>Thu, 16 Apr 2020 17:17:32 +0800</pubDate>
       
-      <guid>https://example.com/posts/PageCreated/</guid>
+      <guid>https://yeyuehuke.github.io/Moon.github.io/posts/PageCreated/</guid>
       <description>这个博客在今天上线了。</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://example.com/docs/Coding/C&#43;&#43;/</link>
+      <link>https://yeyuehuke.github.io/Moon.github.io/docs/Coding/C&#43;&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/docs/Coding/C&#43;&#43;/</guid>
+      <guid>https://yeyuehuke.github.io/Moon.github.io/docs/Coding/C&#43;&#43;/</guid>
       <description>Hey Here is a little page for my C++ learning!</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://example.com/docs/Math/mine/</link>
+      <link>https://yeyuehuke.github.io/Moon.github.io/docs/Math/mine/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/docs/Math/mine/</guid>
+      <guid>https://yeyuehuke.github.io/Moon.github.io/docs/Math/mine/</guid>
       <description>Sure </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://example.com/docs/Math/your/</link>
+      <link>https://yeyuehuke.github.io/Moon.github.io/docs/Math/your/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/docs/Math/your/</guid>
+      <guid>https://yeyuehuke.github.io/Moon.github.io/docs/Math/your/</guid>
       <description>your do you know?</description>
     </item>
     

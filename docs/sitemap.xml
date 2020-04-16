@@ -2,21 +2,23 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	
 	<sitemap>
-	   	<loc>https://example.com/cn/sitemap.xml</loc>
+	   	<loc>https://yeyuehuke.github.io/Moon.github.io/cn/sitemap.xml</loc>
 		
-	   	<lastmod>2020-04-16T17:17:32+08:00</lastmod>
-		
-	</sitemap>
-	
-	<sitemap>
-	   	<loc>https://example.com/en/sitemap.xml</loc>
-		
-	   	<lastmod>2014-09-28T00:00:00+00:00</lastmod>
+	   	<lastmod>2020-04-16T17:23:21+08:00</lastmod>
 		
 	</sitemap>
 	
 	<sitemap>
-	   	<loc>https://example.com/ru/sitemap.xml</loc>
+	   	<loc>https://yeyuehuke.github.io/Moon.github.io/en/sitemap.xml</loc>
+		
+	   	<lastmod>2020-04-16T17:23:21+08:00</lastmod>
+		
+	</sitemap>
+	
+	<sitemap>
+	   	<loc>https://yeyuehuke.github.io/Moon.github.io/ru/sitemap.xml</loc>
+		
+	   	<lastmod>2020-04-16T17:23:21+08:00</lastmod>
 		
 	</sitemap>
 	

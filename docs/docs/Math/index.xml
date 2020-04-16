@@ -2,28 +2,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Math on 新年快乐！</title>
-    <link>https://example.com/docs/Math/</link>
+    <link>https://yeyuehuke.github.io/Moon.github.io/docs/Math/</link>
     <description>Recent content in Math on 新年快乐！</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="https://example.com/docs/Math/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yeyuehuke.github.io/Moon.github.io/docs/Math/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>https://example.com/docs/Math/mine/</link>
+      <link>https://yeyuehuke.github.io/Moon.github.io/docs/Math/mine/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/docs/Math/mine/</guid>
+      <guid>https://yeyuehuke.github.io/Moon.github.io/docs/Math/mine/</guid>
       <description>Sure </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://example.com/docs/Math/your/</link>
+      <link>https://yeyuehuke.github.io/Moon.github.io/docs/Math/your/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/docs/Math/your/</guid>
+      <guid>https://yeyuehuke.github.io/Moon.github.io/docs/Math/your/</guid>
       <description>your do you know?</description>
     </item>
     

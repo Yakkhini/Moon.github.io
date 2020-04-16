@@ -1,0 +1,1 @@
+if(navigator.serviceWorker){navigator.serviceWorker.register("/Moon.github.io/sw.js",{scope:"/Moon.github.io/"});}

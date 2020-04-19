@@ -10,6 +10,15 @@
     
     
     <item>
+      <title>C&#43;&#43;开发计划初始化</title>
+      <link>https://yeyuehuke.github.io/Moon.github.io/posts/20200419C&#43;&#43;Notescreated/</link>
+      <pubDate>Sun, 19 Apr 2020 11:51:34 +0800</pubDate>
+      
+      <guid>https://yeyuehuke.github.io/Moon.github.io/posts/20200419C&#43;&#43;Notescreated/</guid>
+      <description>从今天开始，本页面的C++笔记计划开始，将来用于C++的复习。</description>
+    </item>
+    
+    <item>
       <title>PageCreated</title>
       <link>https://yeyuehuke.github.io/Moon.github.io/posts/PageCreated/</link>
       <pubDate>Thu, 16 Apr 2020 17:17:32 +0800</pubDate>
@@ -24,7 +33,17 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://yeyuehuke.github.io/Moon.github.io/docs/Coding/C&#43;&#43;/</guid>
-      <description>Hey Here is a little page for my C++ learning!</description>
+      <description>简明C++学习笔记 01-Basic Concepts[基本概念] 本章记录了关于C++文件的初始化，和一些基本概念操作。
+什么是C++？ C++是一门编程语言，基于C语言扩展而来。一般来说，C++和C语言偏向于更底层原理，价值也很大。它可能不如Python等新语言易上手、效率高，但有助于初学者刨根问底，深入了解计算机原理。
+你好世界与头部文件初始化 C++语言文件通常以_*.cpp_文件形式出现。我们新建一个_Helloworld.cpp_文件，并在VScode中打开它。
+一片空白。因为_*.cpp_和_*.txt_及其他众多文件一样，都是**文本文件**的一种。在VScode中输入：
+#include &amp;lt;iostream&amp;gt;using namespace std;int main(){cout &amp;lt;&amp;lt; &amp;#34;你好，世界！&amp;#34; &amp;lt;&amp;lt; endl;return 0;}这就是一个最基本的C++编程文件。在终端中执行它，你可以看到有目标字符串显示：
+你好，世界！这就是一个最基本的C++程序。但是先别着急欢呼雀跃。当我们写下这一系列代码，并在终端中执行它时，我们究竟做了什么？
+我们输入的代码可以分为两部分：Header与Body。
+Header#include &amp;lt;iostream&amp;gt;using namespace std;Bodyint main(){cout &amp;lt;&amp;lt; &amp;#34;你好，世界！&amp;#34; &amp;lt;&amp;lt; endl;return 0;}Header定义了程序运行的最基本库与环境，Body则述明了程序运行的主体。int main()是一种最基本的函数，在后边的函数部分会有说明。
+在这里需要注意：
+ 基本的语句需要以分号结尾 作为程序主体的int main()函数需要以&amp;quot;return 0;&amp;ldquo;结尾。 空白和空行在C++程序中通常被忽略，但为了增强代码可读性和美观，我们仍然应该排版代码。  注释 注释分为多行注释和单行注释。
+单行注释#include &amp;lt;iostream&amp;gt;using namespace std;// 这是一行注释……多行注释int main(){cout &amp;lt;&amp;lt; &amp;#34;你好，世界！&amp;#34; &amp;lt;&amp;lt; endl;/*这是很多行注释而且注释符和注释内容在不在同一行都没有关系*//*你也可以这样来代替单行注释……*/return 0;}这就是注释。</description>
     </item>
     
     <item>

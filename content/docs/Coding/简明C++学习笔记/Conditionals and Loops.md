@@ -23,7 +23,7 @@ x = 5;
 y = ++x;
 //Then x = 6, y = 6
 ```
-Prefix先另x增值，再代入计算。
+Prefix先令x增值，再代入计算。
 {{< /tab >}}
 {{< tab "Postfix" >}}
 ```c++
@@ -31,7 +31,7 @@ x = 5;
 y = x++;
 //Then x = 6, y = 5
 ```
-Postfix先代入计算，再赋值。
+Postfix先让x代入计算，再令其增值。
 {{< /tab >}}
 {{< /tabs >}}
 

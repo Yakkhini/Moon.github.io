@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>新年快乐！</title>
+    <link>https://yeyuehuke.github.io/Moon.github.io/docs/Shotgun/%E4%B9%90%E7%90%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+    <description>Recent content on 新年快乐！</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="https://yeyuehuke.github.io/Moon.github.io/docs/Shotgun/%E4%B9%90%E7%90%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://yeyuehuke.github.io/Moon.github.io/docs/Shotgun/%E4%B9%90%E7%90%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E5%A3%B0%E9%9F%B3%E7%9A%84%E5%8E%9F%E7%90%86%E4%B8%8E%E4%B9%90%E9%9F%B3%E4%BD%93%E7%B3%BB/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yeyuehuke.github.io/Moon.github.io/docs/Shotgun/%E4%B9%90%E7%90%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E5%A3%B0%E9%9F%B3%E7%9A%84%E5%8E%9F%E7%90%86%E4%B8%8E%E4%B9%90%E9%9F%B3%E4%BD%93%E7%B3%BB/</guid>
+      <description>乐理学习笔记 声音的原理与乐音体系 声音的原理 声音 由物体振动产生，分为 乐音 与 噪音 两种。其中乐音震动状态相对规则，且具有固定固定音高，噪音则震动相对无序，且不具有固定的音高。
+一般来说，乐音有四个属性：
+  音高：发音物体振动的频率越高，则音高越高；发音物体振动的频率越低，则音高越低。
+  音量：指物体振动的幅度。
+物体振动的幅度越大，则响度越大；物体振动的幅度越小，则响度越小。
+  音值：指物体发声的时间长短。
+  音色：音色的形成较为复杂，指声音的其他特点。
+  乐音体系：由一系列具有固定音高的音组成的总和。
+ 音列：乐音体系中按照上行或下行的次序排列的音。 音阶：按照特定规律，将音高顺次排列的一组音列。  一个例子：
+音阶：1 2 3 4 5 6 7音名：C D E F G A B唱名：Do Re Mi Fa Sol La Si</description>
+    </item>
+    
+  </channel>
+</rss>

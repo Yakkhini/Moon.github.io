@@ -1,6 +1,10 @@
+---
+weight: 1
+---
+
 # 简明C++学习笔记
 
-## 01-Basic Concepts[基本概念]
+# Basic Concepts 基本概念
 
 本章记录了关于C++文件的初始化，和一些基本概念操作。
 
@@ -10,9 +14,9 @@ C++是一门编程语言，基于C语言扩展而来。一般来说，C++和C语
 
 ### 你好世界与头部文件初始化
 
-C++语言文件通常以_*.cpp_文件形式出现。我们新建一个_Helloworld.cpp_文件，并在VScode中打开它。
+C++语言文件通常以 _*.cpp_ 文件形式出现。我们新建一个 _Helloworld.cpp_ 文件，并在VScode中打开它。
 
-一片空白。因为_*.cpp_和_*.txt_及其他众多文件一样，都是**文本文件**的一种。在VScode中输入：
+一片空白。因为 _*.cpp_ 和 _.txt_ 及其他众多文件一样，都是**文本文件**的一种。在VScode中输入：
 
 ```c++
 #include <iostream>
@@ -28,7 +32,7 @@ int main()
 
 这就是一个最基本的C++编程文件。在终端中执行它，你可以看到有目标字符串显示：
 
-```c++
+```
 你好，世界！
 ```
 
@@ -110,7 +114,7 @@ int main()
 
 ### Variables变量
 
-变量储存在本地内存中，具有**数据类型(Data type)**和**值(Value)**两个基本特征。我们创造一个基本的整数型变量：
+变量储存在本地内存中，具有 **数据类型(Data type)** 和 **值(Value)** 两个基本特征。我们创造一个基本的整数型变量：
 
 ```c++
 #include <iostream>
@@ -127,7 +131,7 @@ int main()
 
 
 
-变量名称**大小写敏感**。所以变量**x**与变量**X**是两个不同的变量。若多次为同一变量指定不同数据类型，则可能导致程序错误。
+变量名称**大小写敏感**。所以变量**x**与变量**X**是两个不同的变量。若多次为同一变量指定不同数据类型，则可能导致程序错误。但是变量的值可以在程序运行中多次赋予。
 
 ### cin基本介绍
 
@@ -155,3 +159,59 @@ int main()
 
 就是如此。
 
+### Basic Arithmetic Operators 基本数学运算
+
+我们看看C++最基本的五个运算符。
+
+| 操作 | 编程符号 | 数学意义 |
+| --- | --- | --- |
+| 加法运算 | "+" | x + y |
+| 减法运算 | "-" | x - y |
+| 乘法运算 | "*" | x * y |
+| 除法运算 | "/" | x ÷ y |
+
+只需一个"小小"的案例。
+
+{{< expand "看看这个傻傻的计算器！" >}}
+```c++
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    cout << "反人类多功能计算器，计算四次加减乘除，只能输入整数。" << endl;
+    cout << "加法计算器……" << endl;
+    int add1, add2;
+    cout << "请输入第一个数字：" << endl;
+    cin >> add1;
+    cout << "请输入第二个数字：" << endl;
+    cin >> add2;
+    cout << add1 << " + " << add2 << " = " << add1 + add2 << endl;
+    cout << "减法计算器……"  << endl;
+    int abs1, abs2;
+    cout << "请输入第一个数字：" << endl;
+    cin >> abs1;
+    cout << "请输入第二个数字：" << endl;
+    cin >> abs2;
+    cout << abs1 << " - " << abs2 << " = " << abs1 - abs2 << endl;
+    cout << "乘法计算器……"  << endl;
+    int mul1, mul2;
+    cout << "请输入第一个数字：" << endl;
+    cin >> mul1;
+    cout << "请输入第二个数字：" << endl;
+    cin >> mul2;
+    cout << mul1 << " x " << mul2 << " = " << mul1 * mul2 << endl;
+    cout << "除法计算器……"  << endl;
+    int vis1, vis2;
+    cout << "请输入第一个数字：" << endl;
+    cin >> vis1;
+    cout << "请输入第二个数字：" << endl;
+    cin >> vis2;
+    cout << vis1 << " / " << vis2 << " = " << vis1 / vis2 << "......" << vis1 % vis2 << endl;
+    system("pause");
+    return 0;
+}
+```
+{{< /expand >}}
+
+不要太难过。等我们学过 **循环(Loop)** 后，就可以写出正常些的计算器了。

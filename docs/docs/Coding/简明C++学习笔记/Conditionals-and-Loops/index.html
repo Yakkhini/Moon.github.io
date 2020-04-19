@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="简明C&#43;&#43;学习笔记 Conditionals and Loops 条件与循环 本章记录了C&#43;&#43;条件语句与一些循环(for, while, switch等)的用法。
+Increment Operator 增量运算符 增量运算符有两种，一种是 prefix 形式，一种是 post fix 形式。
+&#43;&#43;x; //prefixx&#43;&#43;; //postfix它们有什么区别呢？
+Prefixx = 5;y = &#43;&#43;x;//Then x = 6, y = 6Prefix先另x增值，再代入计算。
+Postfixx = 5;y = x&#43;&#43;;//Then x = 6, y = 5Postfix先代入计算，再赋值。
+同样的，我们也有 递减运算符 。
+--x; //prefixx--; //postfix它的所有特性都与增量运算符相同，只不过它可以令数字递减。 注：在具有意义的数学计算中，我们仍然建议使用&quot;x = x &#43; 1;&quot;，只有在逻辑运算中再使用递增、递减运算符。
+Assignment Operators 赋值运算符 不需多讲，一个例子就好。"><meta property="og:title" content="" />
+<meta property="og:description" content="简明C&#43;&#43;学习笔记 Conditionals and Loops 条件与循环 本章记录了C&#43;&#43;条件语句与一些循环(for, while, switch等)的用法。
+Increment Operator 增量运算符 增量运算符有两种，一种是 prefix 形式，一种是 post fix 形式。
+&#43;&#43;x; //prefixx&#43;&#43;; //postfix它们有什么区别呢？
+Prefixx = 5;y = &#43;&#43;x;//Then x = 6, y = 6Prefix先另x增值，再代入计算。
+Postfixx = 5;y = x&#43;&#43;;//Then x = 6, y = 5Postfix先代入计算，再赋值。
+同样的，我们也有 递减运算符 。
+--x; //prefixx--; //postfix它的所有特性都与增量运算符相同，只不过它可以令数字递减。 注：在具有意义的数学计算中，我们仍然建议使用&quot;x = x &#43; 1;&quot;，只有在逻辑运算中再使用递增、递减运算符。
+Assignment Operators 赋值运算符 不需多讲，一个例子就好。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://yeyuehuke.github.io/Moon.github.io/docs/Coding/%E7%AE%80%E6%98%8EC&#43;&#43;%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Conditionals-and-Loops/" />
+
+<title>Conditionals and Loops | 新年快乐！</title>
+<link rel="icon" href="/Moon.github.io/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/Moon.github.io/book.min.284c8fc21ced13c579d9027a9d14893c56b243c6045001180391cebb4cc36ab8.css" integrity="sha256-KEyPwhztE8V52QJ6nRSJPFayQ8YEUAEYA5HOu0zDarg=">
+<script defer src="/Moon.github.io/cn.search.min.312931b62e366a8d1375dd87371aaff8f72fb0dd574d204d06c4939bfcdc644d.js" integrity="sha256-MSkxti42ao0Tdd2HNxqv&#43;PcvsN1XTSBNBsSTm/zcZE0="></script>
+
+<script defer src="/Moon.github.io/sw.min.ec67e1156ee692838c99c02e61c233fd95045df7e3d6f8327febcae73d7e43f2.js" integrity="sha256-7GfhFW7mkoOMmcAuYcIz/ZUEXffj1vgyf&#43;vK5z1&#43;Q/I="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/Moon.github.io"><span>新年快乐！</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="搜索" aria-label="搜索" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/Moon.github.io/posts/" >
+        日志
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+    <span>Coding</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <span>简明 C&#43;&#43;学习笔记</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/Moon.github.io/docs/Coding/%E7%AE%80%E6%98%8EC&#43;&#43;%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Basic-Concepts/" class="">Basic Concepts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/Moon.github.io/docs/Coding/%E7%AE%80%E6%98%8EC&#43;&#43;%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Conditionals-and-Loops/" class="active">Conditionals and Loops</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+    <span>Math</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/Moon.github.io/docs/Math/mine/" class="">Mine</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/Moon.github.io/docs/Math/your/" class="">Your</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/Yeyuehuke/" target="_blank" rel="noopener">
+        看看我的Github
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://Yeyuehuke.github.io/" target="_blank" rel="noopener">
+        Back to Lake……
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/Moon.github.io/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Conditionals and Loops</strong>
+
+  <label for="toc-control">
+    <img src="/Moon.github.io/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#简明c学习笔记">简明C++学习笔记</a></li>
+    <li><a href="#conditionals-and-loops-条件与循环">Conditionals and Loops 条件与循环</a>
+      <ul>
+        <li><a href="#increment-operator-增量运算符">Increment Operator 增量运算符</a></li>
+        <li><a href="#assignment-operators-赋值运算符">Assignment Operators 赋值运算符</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="简明c学习笔记">简明C++学习笔记</h1>
+<h1 id="conditionals-and-loops-条件与循环">Conditionals and Loops 条件与循环</h1>
+<p>本章记录了C++条件语句与一些循环(for, while, switch等)的用法。</p>
+<h2 id="increment-operator-增量运算符">Increment Operator 增量运算符</h2>
+<p>增量运算符有两种，一种是 <strong>prefix</strong> 形式，一种是 <strong>post fix</strong> 形式。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#f92672">++</span>x; <span style="color:#75715e">//prefix
+</span><span style="color:#75715e"></span>x<span style="color:#f92672">++</span>; <span style="color:#75715e">//postfix
+</span></code></pre></div><p>它们有什么区别呢？</p>
+
+
+
+
+<div class="book-tabs"><input type="radio" class="hidden" name="tabs-01" id="tabs-01-0" checked="checked" />
+  <label for="tabs-01-0">Prefix</label>
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++">x <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>;
+y <span style="color:#f92672">=</span> <span style="color:#f92672">++</span>x;
+<span style="color:#75715e">//Then x = 6, y = 6
+</span></code></pre></div><p>Prefix先另x增值，再代入计算。</p>
+</div><input type="radio" class="hidden" name="tabs-01" id="tabs-01-1"  />
+  <label for="tabs-01-1">Postfix</label>
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++">x <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>;
+y <span style="color:#f92672">=</span> x<span style="color:#f92672">++</span>;
+<span style="color:#75715e">//Then x = 6, y = 5
+</span></code></pre></div><p>Postfix先代入计算，再赋值。</p>
+</div></div>
+
+<p>同样的，我们也有 <strong>递减运算符</strong> 。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#f92672">--</span>x; <span style="color:#75715e">//prefix
+</span><span style="color:#75715e"></span>x<span style="color:#f92672">--</span>; <span style="color:#75715e">//postfix
+</span></code></pre></div><p>它的所有特性都与增量运算符相同，只不过它可以令数字递减。
+<em>注：在具有意义的数学计算中，我们仍然建议使用&quot;x = x + 1;&quot;，只有在逻辑运算中再使用递增、递减运算符。</em></p>
+<h2 id="assignment-operators-赋值运算符">Assignment Operators 赋值运算符</h2>
+<p>不需多讲，一个例子就好。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#66d9ef">int</span> x <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
+x <span style="color:#f92672">+=</span> <span style="color:#ae81ff">4</span>; <span style="color:#75715e">// equivalent to x = x + 4
+</span><span style="color:#75715e"></span>x <span style="color:#f92672">-=</span> <span style="color:#ae81ff">5</span>; <span style="color:#75715e">// equivalent to x = x - 5
+</span><span style="color:#75715e"></span>x <span style="color:#f92672">*=</span> <span style="color:#ae81ff">3</span>; <span style="color:#75715e">// equivalent to x = x * 3
+</span><span style="color:#75715e"></span>x <span style="color:#f92672">/=</span> <span style="color:#ae81ff">2</span>; <span style="color:#75715e">// equivalent to x = x / 2
+</span><span style="color:#75715e"></span>x <span style="color:#f92672">%=</span> <span style="color:#ae81ff">4</span>; <span style="color:#75715e">// equivalent to x = x % 4
+</span></code></pre></div><p>不建议使用。</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex justify-between">
+
+  
+
+
+  
+
+  
+
+  
+
+
+
+<div class="book-languages" tabindex="0" aria-haspopup="true">
+  <ul>
+    <li class="flex align-center">
+      <img src="/Moon.github.io/svg/translate.svg" class="book-icon" alt="Languages" />
+      中文
+    </li> 
+  </ul>
+
+  <ul class="book-languages-list">
+    
+    <li class="active">
+      <a href="https://yeyuehuke.github.io/Moon.github.io/" class="flex align-center">
+        <img src="/Moon.github.io/svg/translate.svg" class="book-icon" alt="Languages" />
+        中文
+      </a>
+    </li>
+    
+    <li class="">
+      <a href="https://yeyuehuke.github.io/Moon.github.io/en/" class="flex align-center">
+        <img src="/Moon.github.io/svg/translate.svg" class="book-icon" alt="Languages" />
+        English
+      </a>
+    </li>
+    
+    <li class="">
+      <a href="https://yeyuehuke.github.io/Moon.github.io/ru/" class="flex align-center">
+        <img src="/Moon.github.io/svg/translate.svg" class="book-icon" alt="Languages" />
+        Русский язык
+      </a>
+    </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/alex-shpak/hugo-book/edit/master/exampleSite/content/docs/Coding/%e7%ae%80%e6%98%8eC&#43;&#43;%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0/Conditionals%20and%20Loops.md" target="_blank" rel="noopener">
+      <img src="/Moon.github.io/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>编辑本页</span>
+    </a>
+  </div>
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#简明c学习笔记">简明C++学习笔记</a></li>
+    <li><a href="#conditionals-and-loops-条件与循环">Conditionals and Loops 条件与循环</a>
+      <ul>
+        <li><a href="#increment-operator-增量运算符">Increment Operator 增量运算符</a></li>
+        <li><a href="#assignment-operators-赋值运算符">Assignment Operators 赋值运算符</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

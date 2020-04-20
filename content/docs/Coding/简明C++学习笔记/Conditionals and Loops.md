@@ -57,4 +57,4 @@ x %= 4; // equivalent to x = x % 4
 
 不建议使用。
 
-![测试图片](\docs\Coding\C++Notes\img\test.JPG)
+![测试图片](/Moon.github.io/docs/Coding/C++Notes/img/test.JPG)

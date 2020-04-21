@@ -29,6 +29,18 @@ Header#include &amp;lt;iostream&amp;gt;using namespace std;Bodyint main(){
     </item>
     
     <item>
+      <title>微分方程</title>
+      <link>https://yeyuehuke.github.io/Moon.github.io/docs/Math/CalculusNote/%E7%AC%AC%E4%B8%83%E7%AB%A0-%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yeyuehuke.github.io/Moon.github.io/docs/Math/CalculusNote/%E7%AC%AC%E4%B8%83%E7%AB%A0-%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/</guid>
+      <description>微积分学习笔记 第七章 微分方程 常微分方程的基本概念  微分方程：含有未知函数的导数或微分的方程称为 微分方程 ，简称 方程 。 微分方程的阶：微分方程中所出现的未知函数最高阶导数的阶数，称为微分方程的 阶 。 微分方程的解：满足微分方程的函数，被称为微分方程的 解 。 微分方程的通解：如果微分方程的解中含有任意常数，且任意常数的个数与微分方程的阶数相同，则称之为微分方程的 通解 。 微分方程的特解：微分方程的不含任意常数的解，称之为 特解 。 初始条件：确定特解的一组常数被称为 初始条件 。 积分曲线：方程的一个解在平面上对应一条曲线，被称为该微分方程的 积分曲线 。  一阶微分方程 1.可分离变量的方程 能表示 \(g(y)dy = f(x)dx\)的方程，称为 可分离变量的方程 。
+求解的方法是两端积分： \[\int g(y)dy = \int f(x)dx\]&amp;raquo;&amp;raquo; 感谢KaTeX对本博客的大力支持。
+ 例一： (2006，数一、二) 微分方程 \(y&amp;#39; = \dfrac{y(1 - x)}{x}\)的通解是______.
+ 答案↕第一步，先将右侧的y移到左侧，将变量分离；接着左右侧同时积分，得出结果。2.齐次微分方程 能化为 \( \dfrac{dy}{dx} = \varphi \left(\dfrac{y}{x}\right) \)的方程称为 齐次微分方程 。</description>
+    </item>
+    
+    <item>
       <title></title>
       <link>https://yeyuehuke.github.io/Moon.github.io/docs/Coding/%E7%AE%80%E6%98%8EC&#43;&#43;%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Conditionals-and-Loops/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -42,6 +54,15 @@ Postfixx = 5;y = x++;//Then x = 6, y = 5Postfix先让x代入计算，再令�
 同样的，我们也有 递减运算符 。
 --x; //prefixx--; //postfix它的所有特性都与增量运算符相同，只不过它可以令数字递减。 注：在具有意义的数学计算中，我们仍然建议使用&amp;quot;x = x + 1;&amp;quot;，只有在逻辑运算中再使用递增、递减运算符。
 Assignment Operators 赋值运算符 不需多讲，一个例子就好。</description>
+    </item>
+    
+    <item>
+      <title>Calculus Note Created</title>
+      <link>https://yeyuehuke.github.io/Moon.github.io/posts/20200421/</link>
+      <pubDate>Tue, 21 Apr 2020 23:22:06 +0800</pubDate>
+      
+      <guid>https://yeyuehuke.github.io/Moon.github.io/posts/20200421/</guid>
+      <description>奇怪的笔记增加了……</description>
     </item>
     
     <item>

@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="微积分学习笔记 第七章 微分方程 常微分方程的基本概念  微分方程：含有未知函数的导数或微分的方程称为 微分方程 ，简称 方程 。 微分方程的阶：微分方程中所出现的未知函数最高阶导数的阶数，称为微分方程的 阶 。 微分方程的解：满足微分方程的函数，被称为微分方程的 解 。 微分方程的通解：如果微分方程的解中含有任意常数，且任意常数的个数与微分方程的阶数相同，则称之为微分方程的 通解 。 微分方程的特解：微分方程的不含任意常数的解，称之为 特解 。 初始条件：确定特解的一组常数被称为 初始条件 。 积分曲线：方程的一个解在平面上对应一条曲线，被称为该微分方程的 积分曲线 。  一阶微分方程 1.可分离变量的方程 能表示 \(g(y)dy = f(x)dx\)的方程，称为 可分离变量的方程 。
+求解的方法是两端积分： \[\int g(y)dy = \int f(x)dx\]&raquo;&raquo; 感谢KaTeX对本博客的大力支持。
+ 例一： (2006，数一、二) 微分方程 \(y&#39; = \dfrac{y(1 - x)}{x}\)的通解是______.
+ 答案↕第一步，先将右侧的y移到左侧，将变量分离；接着左右侧同时积分，得出结果。2.齐次微分方程 能化为 \( \dfrac{dy}{dx} = \varphi \left(\dfrac{y}{x}\right) \)的方程称为 齐次微分方程 。"><meta property="og:title" content="微分方程" />
+<meta property="og:description" content="微积分学习笔记 第七章 微分方程 常微分方程的基本概念  微分方程：含有未知函数的导数或微分的方程称为 微分方程 ，简称 方程 。 微分方程的阶：微分方程中所出现的未知函数最高阶导数的阶数，称为微分方程的 阶 。 微分方程的解：满足微分方程的函数，被称为微分方程的 解 。 微分方程的通解：如果微分方程的解中含有任意常数，且任意常数的个数与微分方程的阶数相同，则称之为微分方程的 通解 。 微分方程的特解：微分方程的不含任意常数的解，称之为 特解 。 初始条件：确定特解的一组常数被称为 初始条件 。 积分曲线：方程的一个解在平面上对应一条曲线，被称为该微分方程的 积分曲线 。  一阶微分方程 1.可分离变量的方程 能表示 \(g(y)dy = f(x)dx\)的方程，称为 可分离变量的方程 。
+求解的方法是两端积分： \[\int g(y)dy = \int f(x)dx\]&raquo;&raquo; 感谢KaTeX对本博客的大力支持。
+ 例一： (2006，数一、二) 微分方程 \(y&#39; = \dfrac{y(1 - x)}{x}\)的通解是______.
+ 答案↕第一步，先将右侧的y移到左侧，将变量分离；接着左右侧同时积分，得出结果。2.齐次微分方程 能化为 \( \dfrac{dy}{dx} = \varphi \left(\dfrac{y}{x}\right) \)的方程称为 齐次微分方程 。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://yeyuehuke.github.io/Moon.github.io/docs/Math/CalculusNote/%E7%AC%AC%E4%B8%83%E7%AB%A0-%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/" />
+
+<title>微分方程 | 新年快乐</title>
+<link rel="icon" href="/Moon.github.io/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/Moon.github.io/book.min.284c8fc21ced13c579d9027a9d14893c56b243c6045001180391cebb4cc36ab8.css" integrity="sha256-KEyPwhztE8V52QJ6nRSJPFayQ8YEUAEYA5HOu0zDarg=">
+<script defer src="/Moon.github.io/cn.search.min.c4329265d758ecf6924f22d4c4efb02aaff4821165cb3080950b2d09d5308961.js" integrity="sha256-xDKSZddY7PaSTyLUxO&#43;wKq/0ghFlyzCAlQstCdUwiWE="></script>
+
+<script defer src="/Moon.github.io/sw.min.ec67e1156ee692838c99c02e61c233fd95045df7e3d6f8327febcae73d7e43f2.js" integrity="sha256-7GfhFW7mkoOMmcAuYcIz/ZUEXffj1vgyf&#43;vK5z1&#43;Q/I="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/Moon.github.io"><span>新年快乐</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="搜索" aria-label="搜索" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/Moon.github.io/posts/" >
+        日志
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+    <span>Coding</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <span>简明 C&#43;&#43;学习笔记</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/Moon.github.io/docs/Coding/%E7%AE%80%E6%98%8EC&#43;&#43;%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Basic-Concepts/" class="">Basic Concepts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/Moon.github.io/docs/Coding/%E7%AE%80%E6%98%8EC&#43;&#43;%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Conditionals-and-Loops/" class="">Conditionals and Loops</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+    <span>Math</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <span>Calculus Note</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/Moon.github.io/docs/Math/CalculusNote/%E7%AC%AC%E4%B8%83%E7%AB%A0-%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/" class="active">微分方程</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+    <span>Shotgun</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/Moon.github.io/docs/Shotgun/%E4%B9%90%E7%90%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="">乐理学习笔记</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/Yeyuehuke/" target="_blank" rel="noopener">
+        看看我的Github
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://Yeyuehuke.github.io/" target="_blank" rel="noopener">
+        Back to Lake……
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/Moon.github.io/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>微分方程</strong>
+
+  <label for="toc-control">
+    <img src="/Moon.github.io/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#微积分学习笔记">微积分学习笔记</a></li>
+    <li><a href="#第七章-微分方程">第七章 微分方程</a>
+      <ul>
+        <li><a href="#常微分方程的基本概念">常微分方程的基本概念</a></li>
+        <li><a href="#一阶微分方程">一阶微分方程</a>
+          <ul>
+            <li><a href="#1可分离变量的方程">1.可分离变量的方程</a></li>
+            <li><a href="#2齐次微分方程">2.齐次微分方程</a></li>
+            <li><a href="#3一阶线性微分方程">3.一阶线性微分方程</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="微积分学习笔记">微积分学习笔记</h1>
+<h1 id="第七章-微分方程">第七章 微分方程</h1>
+<h2 id="常微分方程的基本概念">常微分方程的基本概念</h2>
+<ol>
+<li>微分方程：含有未知函数的导数或微分的方程称为 <strong>微分方程</strong> ，简称 <strong>方程</strong> 。</li>
+<li>微分方程的阶：微分方程中所出现的未知函数最高阶导数的阶数，称为微分方程的 <strong>阶</strong> 。</li>
+<li>微分方程的解：满足微分方程的函数，被称为微分方程的 <strong>解</strong> 。</li>
+<li>微分方程的通解：如果微分方程的解中含有任意常数，且任意常数的个数与微分方程的阶数相同，则称之为微分方程的 <strong>通解</strong> 。</li>
+<li>微分方程的特解：微分方程的不含任意常数的解，称之为 <strong>特解</strong> 。</li>
+<li>初始条件：确定特解的一组常数被称为 <strong>初始条件</strong> 。</li>
+<li>积分曲线：方程的一个解在平面上对应一条曲线，被称为该微分方程的 <strong>积分曲线</strong> 。</li>
+</ol>
+<h2 id="一阶微分方程">一阶微分方程</h2>
+<h3 id="1可分离变量的方程">1.可分离变量的方程</h3>
+<p>能表示 
+<link rel="stylesheet" href="/Moon.github.io/katex/katex.min.css" />
+<script defer src="/Moon.github.io/katex/katex.min.js"></script>
+<script defer src="/Moon.github.io/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script><span>\(g(y)dy = f(x)dx\)</span>
+ 的方程，称为 <strong>可分离变量的方程</strong> 。</p>
+<p>求解的方法是两端积分：
+<span>\[
+\int g(y)dy = \int f(x)dx\]</span>
+</p>
+<p><em>&raquo;&raquo; 感谢KaTeX对本博客的大力支持。</em></p>
+<blockquote>
+<p>例一： (2006，数一、二) 微分方程 <span>\(y&#39; = \dfrac{y(1 - x)}{x}\)</span>
+ 的通解是______.</p>
+</blockquote>
+<div class="book-expand">
+  <label>
+    <div class="book-expand-head flex justify-between">
+      <span>答案</span>
+      <span>↕</span>
+    </div>
+    <input type="checkbox" class="hidden" />
+    <div class="book-expand-content markdown-inner">
+      <img src="/Moon.github.io/docs/Math/CalculusNote/07-01.jpeg" alt="07-01">
+第一步，先将右侧的y移到左侧，将变量分离；接着左右侧同时积分，得出结果。
+    </div>
+  </label>
+</div>
+
+<h3 id="2齐次微分方程">2.齐次微分方程</h3>
+<p>能化为 <span>\( \dfrac{dy}{dx} = \varphi \left(\dfrac{y}{x}\right) \)</span>
+ 的方程称为 <strong>齐次微分方程</strong> 。</p>
+<p>求解齐次方程的一般方法为：令<span>\( u = \dfrac{y}{x} \)</span>
+ ，则 <span>\( y&#39; = u &#43; xu&#39; \)</span>
+ ，从而将原方程化为 <span>\( xu&#39; = \varphi(u) - u \)</span>
+,此方程为可分离变量的方程。</p>
+<blockquote>
+<p>例二： (1993，数一、二) 求微分方程 <span>\( x^2y&#39; &#43; xy = y^2 \)</span>
+ 满足初始条件 <span>\( y(1) = 1 \)</span>
+ 的特解。</p>
+</blockquote>
+<div class="book-expand">
+  <label>
+    <div class="book-expand-head flex justify-between">
+      <span>答案</span>
+      <span>↕</span>
+    </div>
+    <input type="checkbox" class="hidden" />
+    <div class="book-expand-content markdown-inner">
+      <img src="/Moon.github.io/docs/Math/CalculusNote/07-02.jpeg" alt="07-02">
+    </div>
+  </label>
+</div>
+
+<p>先别急着往下走。在看完答案，豁然开朗后，我们还应该多问一句： <strong>“凭什么？”</strong> 我们凭什么要对这道题用这种方法？在考场上如何辨别这样的题型？秘诀就在一个 <strong>齐次</strong> 上。让我们复盘一下这道题的解题过程，顺便复习一下之前的微积分基础：</p>
+<ol>
+<li>在入手的第一步，我们发现原方程 <strong>无法直接分离常数</strong> 。这是因为除了含 <span>\( y&#39; \)</span>
+ 的项外其它项次数不一样、无法合并、且全部放到等式对面后没法把 <span>\( y \)</span>
+ 除掉。</li>
+<li>但这难不倒我们。只要简单的观察：将 <span>\( x^2y&#39; \)</span>
+ 通过对方程两边同除 <span>\( x^2 \)</span>
+ 的方式，就可以凑出一个完美的、符合齐次微分方程定义的方程：
+<span>\[
+y&#39; &#43; \dfrac{y}{x} = \left(\dfrac{y}{x}\right)^2\]</span>
+
+<em>&raquo;&raquo; “同除”是齐次式的浪漫。</em></li>
+<li>此时此刻，我们再设 <span>\( u = \dfrac{y}{x} \)</span>
+ ,这么做有两个好处：
+<ul>
+<li>分离自变量</li>
+<li>简单地表达 <span>\( y&#39; \)</span>
+ 。</li>
+</ul>
+</li>
+</ol>
+<p>至此，此题就简单地转化为了可分离变量的方程类型的题。</p>
+<h3 id="3一阶线性微分方程">3.一阶线性微分方程</h3>
+<p>形如 <span>\( y&#39; &#43; p(x)y = Q(x) \)</span>
+ 的方程称为 <strong>一阶线性微分方程</strong> 。这里的“线性”是指式中未知函数 <span>\( y \)</span>
+ 及其微商 <span>\( y&#39; \)</span>
+ 均是一次幂的。当 <span>\( Q(x) \equiv 0  \)</span>
+ 时，称为 <strong>齐次线性方程</strong> ；当 <span>\( Q(x) \cancel{\equiv} 0 \)</span>
+ 时，称为 <strong>非齐次线性方程</strong></p>
+<p>求解一阶线性微分方程的一般方法为常数变易法，或直接利用以下通解公式</p>
+<span>\[
+y = e^{- \int p(x) dx} \left[\int Q(x)e^{\int p(x)dx}dx &#43; C \right]\]</span>
+
+<p><em>&raquo;&raquo; 看看这操蛋的公式，可我们又有什么办法！</em></p>
+<blockquote>
+<p>例三： (2008，数二、四) 微分方程 <span>\( (y &#43; x^{2}e^{-x})dx - xdy = 0 \)</span>
+ 的通解是______.</p>
+</blockquote>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex justify-between">
+
+  
+
+
+  
+
+  
+
+  
+
+
+
+<div class="book-languages" tabindex="0" aria-haspopup="true">
+  <ul>
+    <li class="flex align-center">
+      <img src="/Moon.github.io/svg/translate.svg" class="book-icon" alt="Languages" />
+      中文
+    </li> 
+  </ul>
+
+  <ul class="book-languages-list">
+    
+    <li class="active">
+      <a href="https://yeyuehuke.github.io/Moon.github.io/" class="flex align-center">
+        <img src="/Moon.github.io/svg/translate.svg" class="book-icon" alt="Languages" />
+        中文
+      </a>
+    </li>
+    
+    <li class="">
+      <a href="https://yeyuehuke.github.io/Moon.github.io/en/" class="flex align-center">
+        <img src="/Moon.github.io/svg/translate.svg" class="book-icon" alt="Languages" />
+        English
+      </a>
+    </li>
+    
+    <li class="">
+      <a href="https://yeyuehuke.github.io/Moon.github.io/ru/" class="flex align-center">
+        <img src="/Moon.github.io/svg/translate.svg" class="book-icon" alt="Languages" />
+        Русский язык
+      </a>
+    </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/alex-shpak/hugo-book/edit/master/exampleSite/content/docs/Math/CalculusNote/%e7%ac%ac%e4%b8%83%e7%ab%a0-%e5%be%ae%e5%88%86%e6%96%b9%e7%a8%8b.md" target="_blank" rel="noopener">
+      <img src="/Moon.github.io/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>编辑本页</span>
+    </a>
+  </div>
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#微积分学习笔记">微积分学习笔记</a></li>
+    <li><a href="#第七章-微分方程">第七章 微分方程</a>
+      <ul>
+        <li><a href="#常微分方程的基本概念">常微分方程的基本概念</a></li>
+        <li><a href="#一阶微分方程">一阶微分方程</a>
+          <ul>
+            <li><a href="#1可分离变量的方程">1.可分离变量的方程</a></li>
+            <li><a href="#2齐次微分方程">2.齐次微分方程</a></li>
+            <li><a href="#3一阶线性微分方程">3.一阶线性微分方程</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

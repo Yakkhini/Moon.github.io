@@ -1,0 +1,29 @@
+{
+	"inlineketax": {
+		"scope": "markdown",
+		"prefix": "katex",
+		"body": [
+			"{{< katex >}} $1 {{< /katex >}}" ,],
+		"description": "Creat an inline katex!"
+	},
+	"expand": {
+		"scope": "markdown",
+		"prefix": "expand",
+		"body": [
+			"{{< expand >}}",
+			"$1",
+			"{{< /expand >}}" ,
+		],
+		"description": "Creat an inline expand!"
+	},
+	"katex": {
+		"scope": "markdown",
+		"prefix": "katex",
+		"body": [
+			"{{< katex display >}}",
+			"$1",
+			"{{< /katex >}}" ,
+		],
+		"description": "Outline katex!"
+	},
+}

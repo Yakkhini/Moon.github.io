@@ -9,5 +9,17 @@
 	<atom:link href="https://yeyuehuke.github.io/Moon.github.io/docs/Math/CalculusNote/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>微分方程</title>
+      <link>https://yeyuehuke.github.io/Moon.github.io/docs/Math/CalculusNote/%E7%AC%AC%E4%B8%83%E7%AB%A0-%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yeyuehuke.github.io/Moon.github.io/docs/Math/CalculusNote/%E7%AC%AC%E4%B8%83%E7%AB%A0-%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/</guid>
+      <description>微积分学习笔记 第七章 微分方程 常微分方程的基本概念  微分方程：含有未知函数的导数或微分的方程称为 微分方程 ，简称 方程 。 微分方程的阶：微分方程中所出现的未知函数最高阶导数的阶数，称为微分方程的 阶 。 微分方程的解：满足微分方程的函数，被称为微分方程的 解 。 微分方程的通解：如果微分方程的解中含有任意常数，且任意常数的个数与微分方程的阶数相同，则称之为微分方程的 通解 。 微分方程的特解：微分方程的不含任意常数的解，称之为 特解 。 初始条件：确定特解的一组常数被称为 初始条件 。 积分曲线：方程的一个解在平面上对应一条曲线，被称为该微分方程的 积分曲线 。  一阶微分方程 1.可分离变量的方程 能表示 \(g(y)dy = f(x)dx\)的方程，称为 可分离变量的方程 。
+求解的方法是两端积分： \[\int g(y)dy = \int f(x)dx\]&amp;raquo;&amp;raquo; 感谢KaTeX对本博客的大力支持。
+ 例一： (2006，数一、二) 微分方程 \(y&amp;#39; = \dfrac{y(1 - x)}{x}\)的通解是______.
+ 答案↕第一步，先将右侧的y移到左侧，将变量分离；接着左右侧同时积分，得出结果。2.齐次微分方程 能化为 \( \dfrac{dy}{dx} = \varphi \left(\dfrac{y}{x}\right) \)的方程称为 齐次微分方程 。</description>
+    </item>
+    
   </channel>
 </rss>

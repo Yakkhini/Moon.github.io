@@ -18,7 +18,7 @@
 <title>微分方程 | 新年快乐</title>
 <link rel="icon" href="/Moon.github.io/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/Moon.github.io/book.min.284c8fc21ced13c579d9027a9d14893c56b243c6045001180391cebb4cc36ab8.css" integrity="sha256-KEyPwhztE8V52QJ6nRSJPFayQ8YEUAEYA5HOu0zDarg=">
-<script defer src="/Moon.github.io/cn.search.min.c4329265d758ecf6924f22d4c4efb02aaff4821165cb3080950b2d09d5308961.js" integrity="sha256-xDKSZddY7PaSTyLUxO&#43;wKq/0ghFlyzCAlQstCdUwiWE="></script>
+<script defer src="/Moon.github.io/cn.search.min.507004472d4ec6395d0e9bd816534ed8a0b011e8a1540ddc67823a63fc87a2c5.js" integrity="sha256-UHAERy1OxjldDpvYFlNO2KCwEeihVA3cZ4I6Y/yHosU="></script>
 
 <script defer src="/Moon.github.io/sw.min.ec67e1156ee692838c99c02e61c233fd95045df7e3d6f8327febcae73d7e43f2.js" integrity="sha256-7GfhFW7mkoOMmcAuYcIz/ZUEXffj1vgyf&#43;vK5z1&#43;Q/I="></script>
 <!--
@@ -354,7 +354,7 @@ https://github.com/alex-shpak/hugo-book
     </div>
     <input type="checkbox" class="hidden" />
     <div class="book-expand-content markdown-inner">
-      <img src="/Moon.github.io/docs/Math/CalculusNote/07-01.jpeg" alt="07-01">
+      <img src="/Moon.github.io/docs/Math/CalculusNote/07-01.jpg" alt="07-01">
 第一步，先将右侧的y移到左侧，将变量分离；接着左右侧同时积分，得出结果。
     </div>
   </label>
@@ -380,7 +380,7 @@ https://github.com/alex-shpak/hugo-book
     </div>
     <input type="checkbox" class="hidden" />
     <div class="book-expand-content markdown-inner">
-      <img src="/Moon.github.io/docs/Math/CalculusNote/07-02.jpeg" alt="07-02">
+      <img src="/Moon.github.io/docs/Math/CalculusNote/07-02.jpg" alt="07-02">
     </div>
   </label>
 </div>
@@ -413,12 +413,94 @@ y&#39; &#43; \dfrac{y}{x} = \left(\dfrac{y}{x}\right)^2\]</span>
  及其微商 <span>\( y&#39; \)</span>
  均是一次幂的。当 <span>\( Q(x) \equiv 0  \)</span>
  时，称为 <strong>齐次线性方程</strong> ；当 <span>\( Q(x) \cancel{\equiv} 0 \)</span>
- 时，称为 <strong>非齐次线性方程</strong></p>
+ 时，称为 <strong>非齐次线性方程</strong> 。</p>
 <p>求解一阶线性微分方程的一般方法为常数变易法，或直接利用以下通解公式</p>
 <span>\[
 y = e^{- \int p(x) dx} \left[\int Q(x)e^{\int p(x)dx}dx &#43; C \right]\]</span>
 
 <p><em>&raquo;&raquo; 看看这操蛋的公式，可我们又有什么办法！</em></p>
+<p>没有关系，我们先看看“一阶线性微分方程”与“齐次线性方程”的由来，或许你会豁然开朗。</p>
+<hr>
+<h4 id="详解这一系列方程的前世今生与命名逻辑">*详解：这一系列方程的前世今生与命名逻辑</h4>
+<p>若函数 <span>\( f(x,y) \)</span>
+ 满足 <span>\( f(tx,ty) = t^{m}f(x,y) \)</span>
+ ,则称 <span>\( f(x,y) \)</span>
+ 为 <span>\( m \)</span>
+ 次齐次函数。由此可知，齐次方程中的 <span>\( \varphi \left(\dfrac{y}{x} \right) \)</span>
+ 是齐次函数，这也是齐次方程中“齐次”的由来。</p>
+<p>而一阶线性微分方程的齐次也来自于“齐次”函数。不过，它是指未知函数 <span>\( y \)</span>
+ 及其微商 <span>\( y&#39; \)</span>
+ 是其次的，及若将方程写作 <span>\( F(x, y, y&#39;) = 0 \)</span>
+ 的形式，则必有：</p>
+<span>\[
+F(x, ty, ty&#39;) = t^{m}F(x, y, y&#39;) \newline\]</span>
+
+<p>故可做如下推断：</p>
+<span>\(
+若Q(x) \equiv 0, 即原方程为 y&#39; &#43; P(x)y = 0; \newline
+则此时\ \ F(x, y, y&#39;) = y&#39; &#43; P(x)y; \newline
+则有\ \ F(x, ty, ty&#39;) = ty&#39; &#43; P(x) * t * y = t * [y&#39; &#43; P(x)y] = tF(x, y, y&#39;)\ (m = 1);\newline
+若Q(x) \cancel{\equiv} 0, 即原方程为 y&#39; &#43; P(x)y = Q(x); \newline
+则此时\ \ F(x, y, y&#39;) = y&#39; &#43; P(x)y - Q(x); \newline
+则此时\ \ F(x, ty, ty&#39;) \neq tF(x, y, y&#39;).\)</span>
+
+<hr>
+<p>我们先从齐次开始看：</p>
+<span>\[
+y&#39; &#43; P(x)y = 0\]</span>
+
+<p>分离变量：</p>
+<span>\[
+\dfrac{y&#39;}{y} = -P(x);\]</span>
+
+<p>两边积分，化简：</p>
+<span>\[
+y = Ce^{-\int{P(x)dx}}.\]</span>
+
+<p>我们把此式称为齐次线性方程的通解。</p>
+<p>而非齐次线性方程则要稍显复杂：</p>
+<span>\[
+y&#39; &#43; P(x)y = Q(x),\]</span>
+
+<p>将方程两边同除 <span>\( y \)</span>
+ ,构建 <span>\( \dfrac{y&#39;}{y} \)</span>
+ :</p>
+<span>\[
+\dfrac{y&#39;}{y} = -P(x) &#43; \dfrac{Q(x)}{y};\]</span>
+
+<p>传统艺能，两边同时积分：</p>
+<span>\[
+\ln{y} = -\int{P(x)dx} &#43; \int{\dfrac{Q(x)}{y(x)}\mathrm{d}x};\]</span>
+
+<p>设 <span>\( \Phi(x) = \int{\dfrac{Q(x)}{y(x)}\mathrm{d}x} \)</span>
+ ，得</p>
+<span>\[
+y = \mathrm{e}^{\Phi(x) - \int{P(x)\mathrm{d}x}};\]</span>
+
+<p>则有</p>
+<span>\[
+y = \mathrm{C}(x)\mathrm{e}^{-\int{P(x)\mathrm{d}x}},\ \ \mathrm{C}(x) = \mathrm{e}^{-\int{P(x)\mathrm{d}x}}.\]</span>
+
+<p>我们把最终方程与齐次线性方程的通解相比，发现仅仅是常数 <span>\( \mathrm{C} \)</span>
+ 被更换成了函数 <span>\( \mathrm{C}(x) \)</span>
+ ,这就是 <strong>常数变易法</strong> 。当使用这种方法时，我们一般直接把原非齐次线性方程对应的齐次方程的通解中的常数变换成函数，而不再复杂推导。</p>
+<p>接下来，我们把得到的方程代入最初的方程中(使用求导乘法运算律)：</p>
+<span>\[
+\mathrm{C}&#39;(x)\mathrm{e}^{-\int{P(x)\mathrm{d}x}} - P(x)\mathrm{C}(x)\mathrm{e}^{-\int{P(x)\mathrm{d}x}} &#43; P(x)\mathrm{C}(x)\mathrm{e}^{-\int{P(x)\mathrm{d}x}} = Q(x);\]</span>
+
+<p>即</p>
+<span>\[
+\mathrm{C}&#39;(x)\mathrm{e}^{-\int{P(x)\mathrm{d}x}} = Q(x);\]</span>
+
+<p>解得</p>
+<span>\[
+\mathrm{C}(x) = \int{Q(x)\mathrm{e}^{\int{P(x)\mathrm{d}x}}\mathrm{d}x} &#43; \mathrm{C}\]</span>
+
+<p>至此，我们可以得出通解：</p>
+<span>\[
+y = \mathrm{e}^{- \int P(x) \mathrm{d}x} \left[\int Q(x)\mathrm{e}^{\int P(x)\mathrm{d}x}\mathrm{d}x &#43; \mathrm{C} \right]\]</span>
+
+<p>解题完毕。</p>
 <blockquote>
 <p>例三： (2008，数二、四) 微分方程 <span>\( (y &#43; x^{2}e^{-x})dx - xdy = 0 \)</span>
  的通解是______.</p>
